@@ -7,10 +7,10 @@ use DBI;
 use JSON;
 
 # Load your custom module
-use lib '/usr/lib/cgi-bin';  # Add path where mysubs.pm is located
+use lib '/usr/lib/cgi-bin/moniceptor-perl';  # Add path where mysubs.pm is located
 use MySubs;
 
-require '/usr/lib/cgi-bin/config.pl';
+require '/usr/lib/cgi-bin/moniceptor-perl/config.pl';
 our $dbh;
 
 my $cgi = CGI->new;
