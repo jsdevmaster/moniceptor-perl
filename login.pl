@@ -8,10 +8,10 @@ use Crypt::JWT qw(encode_jwt);
 use JSON;
 
 # Load your custom module
-use lib '/usr/lib/cgi-bin/moniceptor-perl';
+use lib '/cgi-bin/moniceptor-perl';
 use MySubs;
 
-require '/usr/lib/cgi-bin/moniceptor-perl/config.pl';
+require '/cgi-bin/moniceptor-perl/config.pl';
 our $dbh;
 
 my $cgi = CGI->new;
